@@ -53,6 +53,16 @@ def login():
         print('Password wrong!')
 
 
+def resetPassword():
+    # TODO
+    pass
+
+
+def changePassword():
+    # TODO
+    pass
+
+
 if __name__ == '__main__':
 
     print('Signup or Login: ')
