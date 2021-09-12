@@ -39,5 +39,30 @@ def createUser():
     user_db.addUserDB(username, password)
 
 
+def login():
+    username = input('Please provide a User name: ')
+    __dbPassword = user_db.fetchUserDB(username)
+    password = _convertSHA256(
+        input('Please provide a password: ').encode('utf8'))
+
+    print(password, __dbPassword)
+
+    if __dbPassword == password:
+        print('Succesfully login!')
+    else:
+        print('Password wrong!')
+
+
 if __name__ == '__main__':
-    createUser()
+
+    print('Signup or Login: ')
+    choice = input('s or l: ')
+
+    if choice == 's':
+        createUser()
+
+    elif choice == 'l':
+        login()
+
+    else:
+        print('Something went wrong!')

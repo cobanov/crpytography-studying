@@ -8,7 +8,7 @@ def connectDB(db_path='database/users.db'):
     conn = None
     try:
         conn = sqlite3.connect(db_path)
-        print('Database succesffully opened!')
+        # print('Database succesffully opened!')
 
         conn.execute("""CREATE TABLE IF NOT EXISTS users(
                         NAME           TEXT    NOT NULL,
@@ -30,5 +30,19 @@ def addUserDB(name, password):
         cur.execute(sql, (name, password))
         conn.commit()
         print('User has been successfully created!')
+
     except:
         print('User could not created!')
+
+
+def fetchUserDB(username):
+    conn = connectDB()
+    try:
+        sql = ''' SELECT PASSWORD from users where name=? '''
+        cur = conn.cursor()
+        cur.execute(sql, (username, ))
+        value = cur.fetchall()
+        return value[0][0]
+
+    except:
+        print('User could not found!')
