@@ -26,7 +26,7 @@ Iletisime gececek iki tarafin sahip oldugu bir key var, fakat bu iletisimi dinle
 
 ![Untitled](Cryptography%2069fc9591d0f046b0883fdb153d726a46/Untitled.png)
 
-**Subtition Cipher, Caesar Cipher**
+### **Subtition Cipher, Caesar Cipher**
 
 Anahtar kisaca, bir tablodan veya basitce cozulebilecek bir algoritmayla belirlenir, bu harfleri kaydirmak veya sabit bir tablodan sifreleme ile yapilabilir. Kirilma yontemi oldukca basittir:
 
@@ -35,7 +35,7 @@ Anahtar kisaca, bir tablodan veya basitce cozulebilecek bir algoritmayla belirle
 
 ![Untitled](Cryptography%2069fc9591d0f046b0883fdb153d726a46/Untitled%201.png)
 
-**Vigener Cipher(16th century, Rome)**
+### **Vigener Cipher(16th century, Rome)**
 
 Herhangi bir anahtar belirlendikten sonra, bu anahtar mesaji ortecek kadar tekrarlanir, anahtarin alfabedeki sirasi mesajin harflerindeki alfabe siralarina eklenir, 26 harf icin mod(26)
 
@@ -43,7 +43,7 @@ Kirilmasi yine oldukca basittir, ilk yapilmasi gereken sey, anahtarin uzunlugu i
 
 ![Untitled](Cryptography%2069fc9591d0f046b0883fdb153d726a46/Untitled%202.png)
 
-**Rotor Machine**
+### **Rotor Machine**
 
 Hebern Machine, Enigma
 
@@ -51,7 +51,7 @@ Harflar, bir disk uzerinde karsilik gelecek sekilde siralanir, klavyede giris ya
 
 ![Untitled](Cryptography%2069fc9591d0f046b0883fdb153d726a46/Untitled%203.png)
 
-**Data Encryption Standard DES**
+### **Data Encryption Standard DES**
 
 Ikinci dunya savasindan sonra genellikle kriptografik sistemler, fiziksel motorlu sistemlerden cikip dijital sistemlere donustu, ilk zamanlarda 2^56 keys, 64 bit block size'a sahip sistemelr o gun icin yeterliydi fakat gunumuzde brute force attack ile kolayca gecilebildigi icin, AES (128-bit key), Salsa20 gibi sistemler kullaniliyor.
 
@@ -60,6 +60,30 @@ Ikinci dunya savasindan sonra genellikle kriptografik sistemler, fiziksel motorl
 Kaynak:
 
 [High School Mathematics Extensions/Discrete Probability - Wikibooks, open books for an open world](https://en.wikibooks.org/wiki/High_School_Mathematics_Extensions/Discrete_Probability)
+
+**Uniform Distribution:** Uzaydaki her eleman ayni agirliga sahiptir.
+
+**Point Distribution**: Tek bir deger icin olasilik degeri 1 ve geri kalan tum degerler icin olasilik degeri 0 olan dagilimdir.
+
+Union Bound
+
+Random Variable:
+
+Uniform Random Variable:
+
+Randomized Algorithms:
+
+### XOR
+
+Temelde XOR iki bitin toplaminin mod2'sidir. Bir espri olarak kriptograflarin bildigi tek sey her seyi XORlamaktir. XOR kriptografide oldukca sik kullanilmaktadir.
+
+Random dagilan bir y dagilimimiz olsun, ayni zamanda bagimsiz **uniform** dagilan bir x dagilimi olsun. Z = Y XOR Z y ne ile basliyor olursa olsun her zaman uniform bir dagilim ciktisi verir.
+
+### Birthday Paradox
+
+Ornek sayisinin karekoku kadar deneme yapildiginda, yaklasik olarak iki ornegin birbirine esit olabileceginin savunan paradoks. Daha iyi bir aciklama geleceke **TODO**
+
+![Untitled](Cryptography%2069fc9591d0f046b0883fdb153d726a46/Untitled%204.png)
 
 ## Atak Tipleri
 
