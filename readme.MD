@@ -1,8 +1,11 @@
 # Cryptography
 
-Notion automatic update
+## Python ile Kriptografi Scriptleri
 
-[https://github.com/younho9/notion2github](https://github.com/younho9/notion2github)
+- [SHA256 Password Encryption with SQlite](https://github.com/cobanov/crpytography-studying/blob/master/sha.py)
+- [AES CTR](https://github.com/cobanov/crpytography-studying/blob/master/aes-ctr.py)
+- [AES GCM](https://github.com/cobanov/crpytography-studying/blob/master/aes-gcm.py)
+- [HMAC](https://github.com/cobanov/crpytography-studying/blob/master/hmac.py)
 
 ## Sozluk
 
