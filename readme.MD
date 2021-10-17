@@ -23,6 +23,12 @@ Encrypt:
 
 Decrypt:
 
+Salting: Salting parolaları, bir veritabanı sızıntısı durumunda sizi dictionary attacklara karsi koruyabilir. Salt, tipik olarak hash'in yanında depolanır ve daha fazla oturum açma girişimi yapıldığında hashin yeniden hesaplanmasında kullanılır.
+
+Hash: Kullanıcı parolalarını düz metin olarak saklamak, veritabanınızın güvenliği ihlal edilirse büyük bir güvenlik ihlaline neden olur. Bu riski azaltmak için her parolanın yalnızca hash özetini saklayın. Bir kullanıcı kimlik doğrulaması yaptığında, hash'i yeniden hesaplayın ve bunu saklanan hash ile karşılaştırın.
+
+Parola hashlerinizi de salting yaptiginizdan emin olun.
+
 ## Kriptografi Kullanim Alanlari
 
 Kriptografinin genellikle iki parcali dusunulebilir, Ilki guvneli anahtarin (secured key)  iletisime gececek iki kisi tarafiondan paylasilmasi ve bu paylasim saglandiktan sonra bu iki kisinin nasil iletisime gececegi.
