@@ -130,35 +130,3 @@ XOR islemi cok hizli bir sekilde yapilabildigi icin cok hizlidir. Fakat anahtar 
 
 **Temel Fikir:** Ciphertext asla plaintext hakkinda fikir vermemeleridir veya onu aciga cikartacak bilgi icermemeledir.
 
-## Stream Ciphers
-
-## Atak Tipleri
-
-**Rainbow Attack:**
-
-TODO
-
-**Dictionary Attack:**
-
-TODO
-
-## Simetrik / Asimetrik
-
-TODO
-
-## Algoritmalar
-
-### SHA
-
-### AES
-
-Salt:
-
-- 128-bit olmali
-- Daha sonrasi icin kaydedilmeli
-
-Key:
-
-256-bit integer, 64 hex digits, 32 byte
-
-base64: binary datanjj 64 ascii karakteriyle kodlanmasidir. 010101 gibi degerler bas64 tabllsundan sirayla degerler alir. 3 adet 8 bitlik ya da 3 baytlik veri, 4 adet 6 bitlik degerle yeniden yazılır.
